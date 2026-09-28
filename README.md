@@ -7,14 +7,17 @@
 ![Flask](https://img.shields.io/badge/Flask-3.1-38bdf8?style=flat-square&logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Vite-3178c6?style=flat-square&logo=typescript&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-salary--predictor.onrender.com-46e3b7?style=flat-square)](https://salary-predictor-1ta9.onrender.com/)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
 ---
 
 ## Live Demo
 
-<!-- ⚠️ REPLACE with your Render URL after deploying, e.g. https://salary-predictor-abc123.onrender.com -->
-**URL:** _not deployed yet — deploy using the [guide below](#deploying-to-render), then paste your service URL here_
+### 👉 **https://salary-predictor-1ta9.onrender.com**
+
+> First load can take ~50 s while the free-tier instance wakes from sleep — subsequent
+> requests are instant.
 
 ---
 
@@ -403,7 +406,6 @@ Validation failure (`400`) — field-to-message map:
 - [ ] SHAP-based local explanations per prediction
 - [ ] Role-specific negotiation tips
 - [ ] Scheduled retraining with drift monitoring
-- [ ] Live demo URL in this README *(once deployed)*
 
 ---
 
