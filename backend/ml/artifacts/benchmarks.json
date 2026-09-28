@@ -1,0 +1,285 @@
+{
+  "overall_avg": 1957040,
+  "median": 1659000,
+  "by_job_title": [
+    {
+      "label": "Cloud Architect",
+      "value": 3476832
+    },
+    {
+      "label": "Senior Software Engineer",
+      "value": 2901984
+    },
+    {
+      "label": "Product Manager",
+      "value": 2830904
+    },
+    {
+      "label": "Machine Learning Engineer",
+      "value": 2790822
+    },
+    {
+      "label": "Chartered Accountant",
+      "value": 2380685
+    },
+    {
+      "label": "Data Engineer",
+      "value": 2263959
+    },
+    {
+      "label": "Data Scientist",
+      "value": 2178476
+    },
+    {
+      "label": "Cybersecurity Analyst",
+      "value": 2092633
+    },
+    {
+      "label": "DevOps Engineer",
+      "value": 1920031
+    },
+    {
+      "label": "Sales Manager",
+      "value": 1814937
+    },
+    {
+      "label": "Software Engineer",
+      "value": 1740183
+    },
+    {
+      "label": "HR Manager",
+      "value": 1561163
+    },
+    {
+      "label": "Business Analyst",
+      "value": 1477733
+    },
+    {
+      "label": "UI/UX Designer",
+      "value": 1326436
+    },
+    {
+      "label": "Marketing Specialist",
+      "value": 1312179
+    },
+    {
+      "label": "Mechanical Engineer",
+      "value": 1212878
+    },
+    {
+      "label": "QA Engineer",
+      "value": 1158670
+    },
+    {
+      "label": "Civil Engineer",
+      "value": 997469
+    }
+  ],
+  "by_experience": [
+    {
+      "label": "0-2 yrs",
+      "value": 999004
+    },
+    {
+      "label": "3-5 yrs",
+      "value": 1228338
+    },
+    {
+      "label": "6-9 yrs",
+      "value": 1769536
+    },
+    {
+      "label": "10-14 yrs",
+      "value": 2497475
+    },
+    {
+      "label": "15+ yrs",
+      "value": 3313218
+    }
+  ],
+  "by_education": [
+    {
+      "label": "Bachelor's",
+      "value": 1899881
+    },
+    {
+      "label": "Master's",
+      "value": 1923171
+    },
+    {
+      "label": "PhD",
+      "value": 2410712
+    }
+  ],
+  "by_city": [
+    {
+      "label": "Bangalore",
+      "value": 2243246
+    },
+    {
+      "label": "Mumbai",
+      "value": 2178638
+    },
+    {
+      "label": "Delhi NCR",
+      "value": 2164945
+    },
+    {
+      "label": "Hyderabad",
+      "value": 2098195
+    },
+    {
+      "label": "Pune",
+      "value": 2017429
+    },
+    {
+      "label": "Chennai",
+      "value": 2011662
+    },
+    {
+      "label": "Remote",
+      "value": 1801395
+    },
+    {
+      "label": "Kolkata",
+      "value": 1725545
+    },
+    {
+      "label": "Ahmedabad",
+      "value": 1717901
+    },
+    {
+      "label": "Jaipur",
+      "value": 1614381
+    }
+  ],
+  "by_job_experience": {
+    "Business Analyst": {
+      "0-2 yrs": 761188,
+      "3-5 yrs": 876694,
+      "6-9 yrs": 1287173,
+      "10-14 yrs": 1885615,
+      "15+ yrs": 2890100
+    },
+    "Chartered Accountant": {
+      "0-2 yrs": 1125889,
+      "3-5 yrs": 1404549,
+      "6-9 yrs": 2017495,
+      "10-14 yrs": 3075167,
+      "15+ yrs": 4114107
+    },
+    "Civil Engineer": {
+      "0-2 yrs": 474727,
+      "3-5 yrs": 660480,
+      "6-9 yrs": 863667,
+      "10-14 yrs": 1227475,
+      "15+ yrs": 1634857
+    },
+    "Cloud Architect": {
+      "0-2 yrs": 2023550,
+      "3-5 yrs": 2437281,
+      "6-9 yrs": 3496089,
+      "10-14 yrs": 4272500,
+      "15+ yrs": 4500000
+    },
+    "Cybersecurity Analyst": {
+      "0-2 yrs": 913556,
+      "3-5 yrs": 1310115,
+      "6-9 yrs": 1755670,
+      "10-14 yrs": 2798652,
+      "15+ yrs": 3749619
+    },
+    "Data Engineer": {
+      "0-2 yrs": 1068188,
+      "3-5 yrs": 1329000,
+      "6-9 yrs": 2114474,
+      "10-14 yrs": 2945158,
+      "15+ yrs": 3964684
+    },
+    "Data Scientist": {
+      "0-2 yrs": 1042429,
+      "3-5 yrs": 1326353,
+      "6-9 yrs": 1911364,
+      "10-14 yrs": 2844108,
+      "15+ yrs": 4152900
+    },
+    "DevOps Engineer": {
+      "0-2 yrs": 928059,
+      "3-5 yrs": 1163148,
+      "6-9 yrs": 1666324,
+      "10-14 yrs": 2463747,
+      "15+ yrs": 3531034
+    },
+    "HR Manager": {
+      "0-2 yrs": 852750,
+      "3-5 yrs": 1059468,
+      "6-9 yrs": 1430257,
+      "10-14 yrs": 2023211,
+      "15+ yrs": 2673500
+    },
+    "Machine Learning Engineer": {
+      "0-2 yrs": 1167857,
+      "3-5 yrs": 1616173,
+      "6-9 yrs": 2443333,
+      "10-14 yrs": 3735288,
+      "15+ yrs": 4459400
+    },
+    "Marketing Specialist": {
+      "0-2 yrs": 697333,
+      "3-5 yrs": 835250,
+      "6-9 yrs": 1105525,
+      "10-14 yrs": 1690456,
+      "15+ yrs": 2292103
+    },
+    "Mechanical Engineer": {
+      "0-2 yrs": 697800,
+      "3-5 yrs": 858381,
+      "6-9 yrs": 1099988,
+      "10-14 yrs": 1501667,
+      "15+ yrs": 1995545
+    },
+    "Product Manager": {
+      "0-2 yrs": 1419286,
+      "3-5 yrs": 1770952,
+      "6-9 yrs": 2618784,
+      "10-14 yrs": 3676766,
+      "15+ yrs": 4445692
+    },
+    "QA Engineer": {
+      "0-2 yrs": 690895,
+      "3-5 yrs": 781441,
+      "6-9 yrs": 1020481,
+      "10-14 yrs": 1461923,
+      "15+ yrs": 2010154
+    },
+    "Sales Manager": {
+      "0-2 yrs": 938714,
+      "3-5 yrs": 1150677,
+      "6-9 yrs": 1514682,
+      "10-14 yrs": 2303899,
+      "15+ yrs": 3349286
+    },
+    "Senior Software Engineer": {
+      "0-2 yrs": 1583733,
+      "3-5 yrs": 1893771,
+      "6-9 yrs": 2637479,
+      "10-14 yrs": 3743473,
+      "15+ yrs": 4427097
+    },
+    "Software Engineer": {
+      "0-2 yrs": 789895,
+      "3-5 yrs": 1077233,
+      "6-9 yrs": 1543483,
+      "10-14 yrs": 2266329,
+      "15+ yrs": 3344708
+    },
+    "UI/UX Designer": {
+      "0-2 yrs": 704000,
+      "3-5 yrs": 872268,
+      "6-9 yrs": 1140071,
+      "10-14 yrs": 1711410,
+      "15+ yrs": 2417280
+    }
+  },
+  "rows": 5000
+}

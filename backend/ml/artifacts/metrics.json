@@ -1,0 +1,69 @@
+{
+  "best_model": "Gradient Boosting",
+  "models": [
+    {
+      "model": "Linear Regression",
+      "r2": 0.9015,
+      "mae": 263573.57,
+      "rmse": 344030.17,
+      "mape": 17.33
+    },
+    {
+      "model": "Ridge Regression",
+      "r2": 0.9014,
+      "mae": 263574.48,
+      "rmse": 344131.83,
+      "mape": 17.29
+    },
+    {
+      "model": "Random Forest",
+      "r2": 0.8574,
+      "mae": 311010.55,
+      "rmse": 413945.97,
+      "mape": 17.62
+    },
+    {
+      "model": "Gradient Boosting",
+      "r2": 0.9472,
+      "mae": 181573.53,
+      "rmse": 251781.07,
+      "mape": 9.74
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "experience_years",
+      "importance": 0.8725
+    },
+    {
+      "feature": "job_title",
+      "importance": 0.7667
+    },
+    {
+      "feature": "city",
+      "importance": 0.0668
+    },
+    {
+      "feature": "industry",
+      "importance": 0.0647
+    },
+    {
+      "feature": "company_size",
+      "importance": 0.0459
+    },
+    {
+      "feature": "education",
+      "importance": 0.0324
+    }
+  ],
+  "residual_std": 251747.28,
+  "target": "salary_inr",
+  "features": [
+    "experience_years",
+    "education",
+    "job_title",
+    "city",
+    "company_size",
+    "industry"
+  ]
+}
