@@ -24,7 +24,7 @@ const PIPELINE = [
   { step: '01', title: 'Synthetic dataset', note: '5,000 profiles, domain-informed rules + noise' },
   { step: '02', title: 'Preprocessing', note: 'One-hot encoding + standard scaling' },
   { step: '03', title: 'Model selection', note: '4 regressors benchmarked on hold-out set' },
-  { step: '04', title: 'Serve', note: 'Flask REST API + React SPA on Render' },
+  { step: '04', title: 'Instant estimates', note: 'Calibrated range returned in milliseconds' },
 ]
 
 export default function App() {
@@ -42,7 +42,7 @@ export default function App() {
         setMeta(data)
         setProfile(data.defaults)
       })
-      .catch(() => setLoadError('Could not reach the API. Is the Flask server running?'))
+      .catch(() => setLoadError('Could not reach the server. Check your connection and retry.'))
   }, [])
 
   const update = (patch: Partial<Profile>) => {

@@ -20,7 +20,7 @@ export default function Hero({ metrics, benchmarks }: Props) {
       <div className="hero__inner">
         <div className="hero__badge reveal">
           <span className="dot" />
-          scikit-learn · Flask · React — end-to-end ML pipeline
+          5,000 salary profiles · 18 roles · 10 cities
         </div>
 
         <h1 className="hero__title reveal reveal--1">
