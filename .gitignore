@@ -7,6 +7,11 @@ venv/
 
 # Trained artifacts (regenerated during build / training)
 backend/ml/artifacts/*.pkl
+backend/ml/artifacts/*.onnx
+backend/ml/artifacts/*.sha256
+
+# Local architecture-diagram tooling output
+.archify/
 
 # Node
 node_modules/

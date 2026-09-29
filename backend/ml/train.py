@@ -1,19 +1,25 @@
 """Train and evaluate salary regression models.
 
 Selects the best model on the held-out test set and persists:
-  - artifacts/pipeline.pkl      best sklearn pipeline (preprocess + model)
-  - artifacts/metrics.json      per-model metrics + feature importances
-  - artifacts/benchmarks.json   dataset aggregates used by the comparison chart
+  - artifacts/pipeline.onnx      best pipeline exported as ONNX (non-executable format)
+  - artifacts/pipeline.onnx.sha256  integrity digest of the ONNX artifact
+  - artifacts/metrics.json       per-model metrics + feature importances
+  - artifacts/benchmarks.json    dataset aggregates used by the comparison chart
+
+The model is served as an ONNX graph instead of a pickle so that loading it
+cannot execute arbitrary Python code.
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
-import joblib
 import numpy as np
 import pandas as pd
+from skl2onnx import to_onnx
+from skl2onnx.common.data_types import FloatTensorType, StringTensorType
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
 from sklearn.inspection import permutation_importance
@@ -179,12 +185,24 @@ def main() -> None:
         "features": NUMERIC + CATEGORICAL,
     }
 
-    joblib.dump(best_pipe, ARTIFACTS / "pipeline.pkl")
+    onnx_model = to_onnx(
+        best_pipe,
+        initial_types=[
+            (name, FloatTensorType([None, 1])) if name in NUMERIC
+            else (name, StringTensorType([None, 1]))
+            for name in CATEGORICAL + NUMERIC
+        ],
+    )
+    onnx_bytes = onnx_model.SerializeToString()
+    (ARTIFACTS / "pipeline.onnx").write_bytes(onnx_bytes)
+    (ARTIFACTS / "pipeline.onnx.sha256").write_text(
+        hashlib.sha256(onnx_bytes).hexdigest()
+    )
     (ARTIFACTS / "metrics.json").write_text(json.dumps(payload, indent=2))
     (ARTIFACTS / "benchmarks.json").write_text(
         json.dumps(build_benchmarks(df), indent=2)
     )
-    print(f"Saved pipeline, metrics and benchmarks to {ARTIFACTS}")
+    print(f"Saved ONNX pipeline, metrics and benchmarks to {ARTIFACTS}")
 
 
 if __name__ == "__main__":

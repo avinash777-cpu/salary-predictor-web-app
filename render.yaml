@@ -12,3 +12,9 @@ services:
     envVars:
       - key: FLASK_ENV
         value: production
+      - key: FLASK_DEBUG
+        value: "false"
+      - key: CORS_ORIGINS
+        value: "https://salary-predictor-1ta9.onrender.com"
+      - key: PREDICT_RATE_LIMIT
+        value: "30 per minute"

@@ -191,7 +191,7 @@ ColumnTransformer
 best by test R² (tie-break: lower MAE)
         │
         ▼
-pipeline.pkl + metrics.json + benchmarks.json
+pipeline.onnx + metrics.json + benchmarks.json
 ```
 
 ### 3. Results
@@ -228,7 +228,7 @@ capture compounding and saturation effects that linear models systematically und
 └─────────────────────────────────────────────────────────────────┘
 
 Offline training loop:
-  generate_data.py → salary_dataset.csv → train.py → pipeline.pkl
+  generate_data.py → salary_dataset.csv → train.py → pipeline.onnx
                                                  → metrics.json
                                                  → benchmarks.json
 ```
@@ -238,7 +238,7 @@ Offline training loop:
 | Layer      | Technology |
 | ---------- | ---------- |
 | Data       | NumPy, pandas (seeded synthetic generator) |
-| ML         | scikit-learn (`ColumnTransformer` + `Pipeline` + `GradientBoostingRegressor`), joblib |
+| ML         | scikit-learn (`ColumnTransformer` + `Pipeline` + `GradientBoostingRegressor`), ONNX Runtime serving |
 | Backend    | Flask, flask-cors, Gunicorn |
 | Frontend   | React 19, TypeScript, Vite |
 | Styling    | Hand-written CSS design system (glassmorphism, aurora gradients, motion) |
@@ -384,7 +384,7 @@ Validation failure (`400`) — field-to-message map:
 │       ├── generate_data.py    # synthetic dataset generator
 │       ├── train.py            # trains & benchmarks 4 regressors
 │       ├── data/salary_dataset.csv
-│       └── artifacts/          # pipeline.pkl, metrics.json, benchmarks.json
+│       └── artifacts/          # pipeline.onnx, metrics.json, benchmarks.json
 └── frontend/
     └── src/
         ├── App.tsx             # layout + state orchestration
